@@ -209,4 +209,108 @@ Adding code examples for each pattern helped me grasp their differences. While w
 5. Swift.org. (2025). MVVM in SwiftUI: The future of iOS architecture. Retrieved from [https://swift.org/mvvm-guide](https://swift.org/mvvm-guide)  
 
 
+## Week 11
+### Object-Oriented Programming (OOP) Concepts and Application 
+
+During  this week, I explored Object-Oriented Programming (OOP) extensively with special focus on key OOP principles and SOLID design principles and how they are used in practice. Below is a systematic outline of what I learned with examples, what it was like to apply OOP on a team programming assignment, and what I learned about our choice of programming language.
+
+
+### Understanding Object-Oriented Programming (OOP)  
+
+OOP is a programming paradigm that organizes code into objects, making it modular, reusable, and scalable. This approach is widely used in modern software development due to its efficiency and maintainability (TechTarget, 2024).  
+
+OOP consists of four fundamental principles which are :  
+
+### 1. Encapsulation 
+Encapsulation restricts direct access to an object’s data and allows controlled access through methods. This ensures data protection and prevents unintended modifications.  
+
+### 2. Abstraction 
+Abstraction hides the implementation details and only exposes necessary functionalities.  
+
+### 3. Inheritance  
+Inheritance allows a class to reuse properties and methods from another class, enabling code reusability and hierarchical relationships between objects.  
+
+### 4. Polymorphism  
+Polymorphism allows a single method to be used in different ways depending on the object.  
+
+### SOLID Principles and OOP Best Practices  
+
+To enhance code maintainability and flexibility, we also learned about the SOLID design principles  
+
+### 1. Single Responsibility Principle (SRP)  
+A class should have only one reason to change.
+
+### 2. Open-Closed Principle (OCP) 
+Classes should be open for extension but closed for modification.  
+
+
+### 3. Interface Segregation Principle (ISP)  
+Clients should not be forced to depend on interfaces they do not use.  
+
+### Applying OOP to Our Group Programming Assignment 
+
+### How OOP Will Be Used in Our Project 
+For our group programming assignment, we will apply OOP principles to ensure our project would be modular, maintainable, and reusable.  
+
+Example: Implementing OOP for a User Management System 
+- `User` (Base class): Stores user details.  
+- `AdminUser` (Child class): Extends `User` with additional permissions.  
+- `GuestUser` (Child class): Extends `User` with limited access.  
+- `AuthenticationManager or Leader` (Encapsulation): Manages user login without exposing sensitive data.  
+
+By structuring our code this way, we separate responsibilities and reduce complexity, making future modifications easier.  
+
+---
+
+### Is Our Chosen Programming Language OOP-Capable?  
+
+### Chosen Language: Python 
+Python is fully OOP-capable, supporting encapsulation, inheritance, polymorphism, and abstraction.  
+
+### Does Python support other paradigms?  
+Yes! Besides OOP, Python also supports:  
+- Procedural Programming (using functions without objects)  
+- Functional Programming (using lambda functions and higher-order functions like `map()`, `reduce()`, and `filter()`)  
+
+### Why is Python a good choice?  
+- It allows multiple paradigms (OOP, procedural, and functional).  
+- It has easy-to-use syntax, making it beginner-friendly.  
+- It has strong community support for best practices.  
+
+Example of Python’s OOP Support: 
+
+```python
+class User:
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+
+    def display_info(self):
+        print(f"User: {self.name}, Email: {self.email}")
+
+class AdminUser(User):
+    def __init__(self, name, email, admin_level):
+        super().__init__(name, email)
+        self.admin_level = admin_level
+
+admin = AdminUser("Alice", "alice@example.com", "SuperAdmin")
+admin.display_info()
+```
+
+### Final Thoughts
+OOP is a powerful paradigm that makes code structured, reusable, and scalable. Using OOP principles and SOLID design in our group project ensures that our code is easy to maintain, extend, and debug. Python’s full OOP support, combined with its ability to support multiple paradigms, makes it an ideal language for our project.  
+
+
+
+### References  
+
+1. Martin, R. C. (2014). The Single Responsibility Principle. Clean Coder Blog. Retrieved from [https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html](https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html)  
+2. Martin, R. C. (2014). The Open-Closed Principle. Clean Coder Blog. Retrieved from [https://blog.cleancoder.com/uncle-bob/2014/05/12/TheOpenClosedPrinciple.html](https://blog.cleancoder.com/uncle-bob/2014/05/12/TheOpenClosedPrinciple.html)  
+3. Wikipedia. (2025). Interface Segregation Principle. Retrieved from [https://en.wikipedia.org/wiki/Interface_segregation_principle](https://en.wikipedia.org/wiki/Interface_segregation_principle) 
+4. TechTarget. (2024). OOP Explained. Retrieved from https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP
+5. Dev.to. (2024). Combining OOP and Functional Programming. Retrieved from https://dev.to/adityabhuyan/combining-object-oriented-and-functional-programming 
+6. Gee CS Oswego. (2024). CS Resources on OOP Principles. Retrieved from [https://gee.cs.oswego.edu/dl/groups](https://gee.cs.oswego.edu/dl/groups)
+7. Stack Overflow. (2024). How do you design object-oriented projects?. Retrieved from [https://stackoverflow.com/questions/1100819/how-do-you-design-object-oriented-projects](https://stackoverflow.com/questions/1100819/how-do-you-design-object-oriented-projects)
+
+
 
