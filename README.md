@@ -130,3 +130,83 @@ One project that caught my attention was the Guess Game created by Prateek Kalra
 #### Reflection
 
 Searching for the right project to contribute to was a bit challenging. I explored platforms like Good First Issue, Up for Grabs, and CodeTriage to find suitable opportunities. I had specific criteria in mind, and it took considerable time to identify a project that met my expectations. Additionally, sifting through various issues in the project to find one I could effectively address added to the complexity of the process.
+
+
+## Week 10 
+### Learning MV Architectural Patterns  
+
+This week, I explored MV (Model-View) architectural patterns, which are widely used in UI development. These patterns structure applications by separating data, user interface, and logic, making them more maintainable and scalable (Django Project, 2025; Android Developers, 2025).  
+
+
+
+### Key Concepts of MV Patterns 
+
+The MVfamily includes several architectural patterns that all share the Model (M) and View (V) components but differ in their third part. The most commonly used ones are:    
+
+- ### MVC (Model-View-Controller)  
+ MVC is one of the oldest and most well-known UI architectural patterns and is a long-standing and widely adopted pattern. . It separates concerns into three distinct parts:  
+
+1. Model – Manages application data and business logic.  
+2. View – Displays data to the user but does not modify it.  
+3. Controller – Acts as an intermediary, processing user input and updating the Model accordingly.
+
+- ### MVVM (Model-View-ViewModel) 
+
+MVVM is an evolution of MVC and is often used in modern mobile and web development (Android Developers, 2025). It helps separate concerns even further:  
+
+1. Model – Represents the application data and logic.  
+2. View – Displays information to the user.  
+3. ViewModel – Acts as an intermediary, preparing data for the View while keeping the Model unaware of UI logic.
+
+- ### MVP (Model-View-Presenter) 
+
+MVP is a variation of MVC, where the Presenter takes full responsibility for UI logic instead of the Controller. It is commonly used in Android development (Android Developers, 2025). 
+
+- ### MVI (Model-View-Intent) and Unidirectional Data Flow  
+
+MVI is a relatively newer pattern that enforces unidirectional data flow to make applications more predictable. It is particularly useful in state management frameworks (JetBrains, 2025).  
+
+### Evolution of MVC in Different Platforms
+Different platforms have adapted MVC in unique ways:    
+
+- iOS Development: Initially relied heavily on MVC, but with the introduction of SwiftUI, it has shifted toward MVVM.  
+- Android Development: Originally used MVC and MVP, but now prefers MVVM and Jetpack Compose.  
+- Web Development: MVC remains prevalent in frameworks such as Django, Ruby on Rails, Angular, and Vue.  
+
+### Separation of Concerns and Why It Matters 
+
+A key takeaway from learning MV patterns is the importance of separating data, user interface, and logic. This improves:  
+
+- Testability – Independent modules are easier to test.  
+- Scalability – Reduces complexity as applications grow.  
+- Maintainability – Makes debugging and future updates easier.  
+
+
+### Applying MVC to Software Development  
+
+This week, I learned that MVC remains a foundational UI architecture. While newer trends like MVVM are growing in popularity, MVC still plays a critical role in modern applications (Django Project, 2025; Swift.org, 2025).  
+
+### How I Applied My Learning:  
+ 1. Examined how MVC structures function in different programming environments. 
+ 2. Analyzed real-world implementations in web frameworks like Django and Ruby on Rails.
+ 3. Researched how MVVM builds upon MVC in mobile app development.**  
+
+---
+
+### Reflection
+
+As I wrote this section, I found MVC easy to understand since it is widely used, but MVI was more complex because of its strict data flow rules. MVVM felt like the most balanced approach, and I can see why it is becoming a popular choice for modern applications.  
+
+Adding code examples for each pattern helped me grasp their differences. While writing, I made sure to keep explanations clear so that someone new to architectural patterns can follow along easily.  
+
+
+### References
+
+1. Vue.js. (2025). Introduction to Vue.js framework. Retrieved from [https://vuejs.org/guide/introduction.html](https://vuejs.org/guide/introduction.html)  
+2. JetBrains. (2025). Kotlin and MVI: Best practices for state management. Retrieved from [https://blog.jetbrains.com/kotlin-mvi](https://blog.jetbrains.com/kotlin-mvi)  
+3. Android Developers. (2025). Understanding MVVM in Android applications. Retrieved from [https://developer.android.com/jetpack/guide](https://developer.android.com/jetpack/guide)  
+4. Django Project. (2025). MVC in web frameworks. Retrieved from [https://docs.djangoproject.com/en/4.0/mvc-overview](https://docs.djangoproject.com/en/4.0/mvc-overview)  
+5. Swift.org. (2025). MVVM in SwiftUI: The future of iOS architecture. Retrieved from [https://swift.org/mvvm-guide](https://swift.org/mvvm-guide)  
+
+
+
